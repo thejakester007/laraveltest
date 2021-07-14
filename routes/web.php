@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/testing', function() {
+    return view('welcome');
+});
+
 Route::get('/send-notification', [SampleController::class, 'sendNotification']);
